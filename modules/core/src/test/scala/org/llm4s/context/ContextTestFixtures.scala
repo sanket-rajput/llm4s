@@ -21,13 +21,12 @@ object ContextTestFixtures {
     }
   }
 
-    /**
-     * Create a ConversationTokenCounter using the simple mock tokenizer.
-     * Uses a test-only factory instead of reflection.
-     */
+  /**
+   * Create a ConversationTokenCounter using the simple mock tokenizer.
+   * Uses a test-only factory instead of reflection.
+   */
   def createSimpleCounter(): ConversationTokenCounter =
     ConversationTokenCounter.forTest(simpleTokenizer)
-
 
   // ============ Sample Messages ============
 
